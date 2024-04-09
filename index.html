@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio BootsTrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        .nav-item {
+            position: inherit;
+        }
+
+        .carousel img{
+            max-width: 100%;
+        }
+        section {
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabeçalho">
+
+        <div class="navbar navbar-expand-lg ">
+            <h1>Bootstrap</h1>
+            <button data-bs-toggle="collapse" type="button" data-bs-target="#menu" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#inicio">inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Gatos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">contatos</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabeçalho"></div>
+
+
+
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" id="inicio">
+            <div class="carousel-inner" data-bs-ride="carousel">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2024/03/08/09/55/cat-8620369_1280.png" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/03/08/09/47/ai-generated-8620359_1280.png" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/17/00/18/cat-8578562_1280.jpg" alt="">
+                </div>
+            </div>
+
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+        <section id="produtos">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 pt-5">
+                    <h4>Gatitos</h4>
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            <h6>Mico</h6>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2024/01/19/19/24/ai-generated-8519665_1280.jpg" alt="">
+                        <div class="card-text">Nas profundezas de uma floresta, nasceu um gatinho chamado Mico.
+                            <p> Mico era ágil e curioso, sempre explorando os ramos das árvores e os riachos próximos.
+                                Quando cresçe Mico é adotado por uma mulher bondosa e vive sua vida na tranquilidade de
+                                uma vida domestica.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 pt-5">
+                    <h4>Gatitos</h4>
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            <h6>pantera</h6>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2023/07/11/13/20/ai-generated-8120606_1280.jpg" alt="">
+                        <div class="card-text">
+                            <p>Bola de neve que vivia em uma casa aconchegante com uma família amorosa. Seu pelo era
+                                macio como algodão e seus olhos eram da cor mais puro de azul. Neve adorava se
+                                aconchegar no colo dos seus humanos e dormir ao sol da manhã.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 pt-5 p-">
+                    <h4>Gatitos</h2>
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Luca
+                            </div>
+
+                            <img src="https://cdn.pixabay.com/photo/2023/09/28/17/10/cat-8282097_1280.jpg" alt="">
+                            <div class="card-text">
+                                Luca era um gatinho cinza com listras sutis e olhos amarelos brilhantes. Ele nasceu em
+                                um
+                                abrigo de animais e foi adotado por uma família amorosa. Desde o primeiro dia, Luca
+                                mostrou-se um explorador destemido, investigando cada canto da casa.
+                            </div>
+                        </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
